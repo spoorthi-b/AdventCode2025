@@ -1,23 +1,3 @@
-'''
-Intution: Identify numbers that are formed by repeating a
-smaller number x at least n times, where n >= 2.
-
-Valid Examples:
-- 11111 --> x = 1, n = 5
-- 121212 --> x = 12, n = 3
-- 123123 --> x = 123, n = 2
-
-To check this, convert the number to a string and see if
-there exists a pattern such that:
-
-pattern * n = number (n >= 2)
-
-Lenght of pattern when n = 2:
-- If the number has even length, len(pattern) = len(number) // 2
-- If the number has odd length, len(pattern) = (len(number) // 2) + 1
-
-The maximum length of pattern is (len(number) // 2) + 1
-'''
 class Solution:
     def findInvalidIds(self, input):
         res = 0
@@ -35,9 +15,12 @@ class Solution:
         res = 0
         # iterate through all values from start to end to find pattern
         for i in range(start, end + 1):
-            string_form = str(i)    # convert the number to string
+            # convert the number to string
+            string_form = str(i)
             n = len(string_form)
-            for window in range(1, n // 2 + 1): # pattern size ranges from 1 to (n/2 + 1)
+            
+            # pattern size ranges from 1 to (n/2 + 1)
+            for window in range(1, n // 2 + 1):
                 if n % window != 0:
                     continue 
                 pattern = string_form[:window]
