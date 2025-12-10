@@ -21,11 +21,11 @@ the current index to be considered a valid joltage
 - When Index is valid: We need to consider two choices:
     1. The value at current index is included, our string would be
         ```
-            consider = dp[i+1][k] + dp[i+1][k-1]
+            dp[i][k] = bank[i] + dp[i+1][k-1]
         ```
     2. The value at current index is not included, our strind would be
         ```
-            consider = dp[i+1][k-1]
+            dp[i][k] = dp[i+1][k]
         ```
 Pick the maximum out of these two choices
 Keep making these three choice till we reach dp[0][12], which would be our answer
