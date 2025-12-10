@@ -1,5 +1,5 @@
 ## Intuition
-### Initial Intution - DFS
+### DFS
 Explore two paths at every index:
 1. Maximum number if the value at index i is accepted
 2. Maximum number if the value at index i is not accepted
@@ -9,7 +9,7 @@ Time Complexity = O(m x 2^n)
 This worked for a small input but for a large input it was
 taking too long
 
-### Final Intution - Dynamic Programming, Bottom up approach
+### Dynamic Programming, Bottom up approach
 Have a 2 matrix of shape (n x k), n = length of bank + 1, k = 13
 We have extra row and column as a buffer so, we do not run not in range error
 
