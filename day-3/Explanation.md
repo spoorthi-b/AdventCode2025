@@ -18,7 +18,7 @@ There are three choices at each index
 - When index is invalid: n - i < k, There are not enough characters trailing 
 the current index to be considered a valid joltage
 - Edges: k = 0, There is no valid input 
-- When Index is valid: We woulf need to consider two choices:
+- When Index is valid: We need to consider two choices:
     1. The value at current index is included, our string would be
         ```
             consider = dp[i+1][k] + dp[i+1][k-1]
