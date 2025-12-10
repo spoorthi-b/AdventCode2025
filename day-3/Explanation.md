@@ -27,7 +27,7 @@ the current index to be considered a valid joltage
         ```
             dp[i][k] = dp[i+1][k]
         ```
-Pick the maximum out of these two choices
+Pick the maximum out of these two choices.
 Keep making these three choice till we reach dp[0][12], which would be our answer
 
 Time Complexity = O(m x n)
