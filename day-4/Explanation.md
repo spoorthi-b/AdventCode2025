@@ -1,3 +1,4 @@
+# Day 4 — Remove Paper Rolls
 ## Intuition:
 
 The problem is similar to LeetCode Blind 75 problem: 200 Number of Islands.

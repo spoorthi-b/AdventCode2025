@@ -1,3 +1,4 @@
+# Day 3 — Maximum Joltage
 ## Intuition
 ### DFS
 Explore two paths at every index:

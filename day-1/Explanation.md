@@ -1,3 +1,4 @@
+# Day 5 — Unlock the dial
 ## Intuition:
 
 Each move is written in the form:  L5, R42, L105, etc.
