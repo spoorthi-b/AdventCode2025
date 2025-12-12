@@ -38,6 +38,8 @@ We then check if x falls in this range
 ```
 If this condition is true we update the number of fresh items
 
+Time Complexity: O(IlogR)
+
 ### Approach for 2nd problem - Merge ranges
 Question: Given just the range of IDs, find the total number of fresh items
 
@@ -47,3 +49,5 @@ possible IDs in a range. It can be done easily with:
 ```
     total_fresh_ids += (end - start + 1)
 ```
+
+Time Complexity: O(n)
