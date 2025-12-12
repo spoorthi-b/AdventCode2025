@@ -17,10 +17,9 @@ The challenge is to:
 set a pointer at the end of this list and update it when needed
 
 2. Process columns from right → left
-- Check if the column makrs an end before we proceed.
-    - All values should be a space
+- Parse the current column and get the number by appending each row character
+- Check if the column makrs an end
 - If column does not mark the end:
-    - parse the current column and get the number by appending each row character
     - update your current sub, based on the current operator
 - If column marks the end:
     - add the current sub to the total
