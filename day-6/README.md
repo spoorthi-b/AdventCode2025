@@ -14,7 +14,7 @@ The challenge is to:
 ```
     operators = problem[last_row].split()
 ```
-set a pointer at the end of this list and update it when needed
+current operator will always be the last element
 
 2. Process columns from right → left
 - Parse the current column and get the number by appending each row character
@@ -23,7 +23,7 @@ set a pointer at the end of this list and update it when needed
     - update your current sub, based on the current operator
 - If column marks the end:
     - add the current sub to the total
-    - move the pointer to the left on the operators array
+    - pop the last element in the operators array
     - reset the current sub to 0 if the current operator is + else to 1
 
 
